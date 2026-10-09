@@ -1,7 +1,7 @@
 // Rectangular backing plate. All dimensions in millimeters.
 // Flat, uninterrupted faces: no grooves, ribs, embossing, or texture.
-length_mm = 400;
-width_mm = 300;
+length_mm = 399.5;
+width_mm = 299.5;
 thickness_mm = 3.5;
 
 assert(length_mm > 0 && width_mm > 0 && thickness_mm > 0,

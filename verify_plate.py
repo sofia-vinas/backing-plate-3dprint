@@ -85,8 +85,8 @@ def verify(path, expected, tolerance=0.001):
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("path", nargs="?", type=Path, default=DEFAULT_OUTPUT)
-    parser.add_argument("--length", type=positive, default=400.0)
-    parser.add_argument("--width", type=positive, default=300.0)
+    parser.add_argument("--length", type=positive, default=399.5)
+    parser.add_argument("--width", type=positive, default=299.5)
     parser.add_argument("--thickness", type=positive, default=3.5)
     args = parser.parse_args()
     try:

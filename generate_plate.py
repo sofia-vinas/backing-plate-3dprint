@@ -3,7 +3,7 @@ import argparse
 import math
 from pathlib import Path
 
-DEFAULT_OUTPUT = Path(__file__).resolve().parents[1] / "files/backing_plate_400x300x3p5mm.stl"
+DEFAULT_OUTPUT = Path(__file__).resolve().parent / "backing_plate_399p5x299p5x3p5mm.stl"
 
 
 def positive(value):
@@ -43,8 +43,8 @@ def write_plate(path, length, width, thickness):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
-    parser.add_argument("--length", type=positive, default=400.0)
-    parser.add_argument("--width", type=positive, default=300.0)
+    parser.add_argument("--length", type=positive, default=399.5)
+    parser.add_argument("--width", type=positive, default=299.5)
     parser.add_argument("--thickness", type=positive, default=3.5)
     parser.add_argument("--output", type=Path, default=DEFAULT_OUTPUT)
     args = parser.parse_args()
